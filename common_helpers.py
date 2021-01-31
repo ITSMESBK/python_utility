@@ -294,3 +294,55 @@ class helper_module():
             except :
                 continue
         return list_items
+
+    #SEARCH ALGORITHMS USING FOR EFFECTIVE AND OPTIMIZED SEARCH
+    
+    #LINEAR SEARCH IN OPTIMAL WAY
+    '''
+    O(n)
+    '''
+    def get_linearSearch(list_items, element):
+        def ls_mapper(iter_val):
+            if list_items[iter_val] == element:
+                return iter_val   
+        output_val = list(map(ls_mapper,range(len(list_items))))
+        if None in output_val:
+            output_val = list(filter(None, output_val)) 
+        return output_val  
+
+    #SEARCH NUMBERS
+    '''
+    log2(n)
+
+    length of the array is 'n' 
+    
+    Iterarion based steps :
+
+    step 01 :
+    len_array = n
+    
+    step 02 :
+    len_array = n/2 
+    
+    step 03 :
+    len_array = n/2 /2 = n/2**2
+
+    step 04 :
+    n/2 k = 1
+    apply log on both sides
+    log2(n) = k log2 (2)  
+    ''' 
+    def get_binarySearch(list_items, val):
+        first = 0
+        last = len(list_items)-1
+        index = -1
+        while (first <= last) and (index == -1):
+            mid = (first+last)//2
+            if list_items[mid] == val:
+                index = mid
+            else:
+                if val<list_items[mid]:
+                    last = mid -1
+                else:
+                    first = mid +1
+        return index    
