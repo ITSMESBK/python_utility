@@ -1,6 +1,6 @@
 # =========================================================================================
 # !/usr/bin/env python3
-# Filename: simple_linkedlist.py
+# Filename: traversal_into_linkedlist.py
 # Description:Implementation of Simple Linked List 
 # Author: Bharathkumar Sivakumar <BHARATH SBK @ITSMESBK>
 # Python Environment - Python3
