@@ -19,3 +19,4 @@ credintials_json_data = json.load(credintials_json_file)
 # DATASET AND OTHER PATHS 
 
 CUSTOM_FILE_PATH_01 = credintials_json_data['file_path']['bs_pl_txt']
+
